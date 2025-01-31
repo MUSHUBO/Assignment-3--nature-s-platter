@@ -31,6 +31,8 @@
                     colors: {
                         clifford: '#da373d',
                         'green-primary': '#179800',
+                        'light-white': '#EFEBE3',
+                        'light-black': '#111111',
                     }
                 }
             }
@@ -41,7 +43,7 @@
 <body class="sora-font">
     <header class="md:container mx-auto bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
         <!-- navbar section -->
-        <nav>
+        <nav class="border border-green-primary sm:border-none">
             <div class="navbar justify-between">
                 <div class="flex-row-reverse mx-auto md:mx-0">
                     <div class="dropdown">
@@ -99,8 +101,42 @@
     </header>
     <main>
         <!-- Services section -->
-        <section>
-            
+        <section class="sm:my-36 my-12 md:mx-4 flex justify-center">
+            <div>
+                <div>
+                    <h1 class="text-4xl font-semibold text-green-primary sm:mb-12 mb-8">Services</h1>
+                </div>
+                <!-- box1 -->
+                <div class="md:flex gap-3">
+                    <div class="bg-light-white text-center p-8 rounded-2xl mt-5">
+                        <div class="bg-white rounded-full flex justify-center items-center mb-6 w-24 h-24 mx-auto">
+                            <img src="assets/service.png" alt="" class="w-16 h-16">
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-3">24/7 Services</h4>
+                        <p class="text-xl font-light text-light-black">Lorem ipsum dolor sit amet, <br> consectetur
+                            adipiscing elit, sed do <br> eiusmod tempor incididunt</p>
+                    </div>
+                    <!-- box 2 -->
+                    <div class="bg-light-white text-center p-8 rounded-2xl mt-5">
+                        <div class="bg-white rounded-full flex justify-center items-center mb-6 w-24 h-24 mx-auto">
+                            <img src="assets/delivery.png" alt="" class="w-16 h-16">
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-3">Fast Delivery</h4>
+                        <p class="text-xl font-light text-light-black">Lorem ipsum dolor sit amet, <br> consectetur
+                            adipiscing elit, sed do <br> eiusmod tempor incididunt</p>
+                    </div>
+                    <!-- box 3 -->
+                    <div class="bg-light-white text-center p-8 rounded-2xl mt-5">
+                        <div class="bg-white rounded-full flex justify-center items-center mb-6 w-24 h-24 mx-auto">
+                            <img src="assets/healthy.png" alt="" class="w-16 h-16">
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-3">Healthy Products </h4>
+                        <p class="text-xl font-light text-light-black">Lorem ipsum dolor sit amet, <br> consectetur
+                            adipiscing elit, sed do <br> eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <!-- Popular Products section -->
         <section>
