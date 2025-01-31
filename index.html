@@ -39,13 +39,13 @@
 </head>
 
 <body class="sora-font ">
-    <header>
+    <header class="md:container mx-auto">
         <!-- navbar section -->
         <nav>
-            <div class="navbar bg-base-100 justify-around">
-                <div class="flex-row-reverse ">
+            <div class="navbar bg-base-100 justify-between">
+                <div class="flex-row-reverse mx-auto md:mx-0">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost md:hidden  text-[#179800] ml-32 md:ml-0 ">
+                        <div tabindex="0" role="button" class="btn btn-ghost md:hidden  text-[#179800] ml-60 md:ml-0 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -61,8 +61,11 @@
                             <li><a>Register</a></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="hidden sm:flex">
                         <img src="assets/logo-header.png" alt="">
+                    </div>
+                    <div class="sm:invisible visible">
+                        <img src="assets/Group.png" alt="">
                     </div>
                 </div>
                 <div class="navbar-center hidden md:flex">
@@ -73,7 +76,7 @@
 
                     </ul>
                 </div>
-                <div class="gap-6 hidden md:flex">
+                <div class="gap-6 hidden md:flex navbar-center">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i class="fa-solid fa-cart-shopping"></i>
                     <div class="">
