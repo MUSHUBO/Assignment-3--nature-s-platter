@@ -10,10 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <!-- title logo -->
-     <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/healthy.png" type="image/x-icon">
     <!-- fontawsom cdn -->
     <script src="https://kit.fontawesome.com/bab4642bab.js" crossorigin="anonymous"></script>
     <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- style section -->
     <style>
@@ -21,15 +24,68 @@
             font-family: "Sora", serif;
         }
     </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'green-primary': '#179800',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body class="sora-font">
+<body class="sora-font ">
     <header>
+        <!-- navbar section -->
         <nav>
-            
-        </nav>
-        <section>
+            <div class="navbar bg-base-100 justify-around">
+                <div class="flex-row-reverse ">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost md:hidden  text-[#179800] ml-32 md:ml-0 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl">
+                            <li><a>Product</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Contact us</a></li>
+                            <li><a>Login</a></li>
+                            <li><a>Register</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="assets/logo-header.png" alt="">
+                    </div>
+                </div>
+                <div class="navbar-center hidden md:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
 
+                    </ul>
+                </div>
+                <div class="gap-6 hidden md:flex">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="">
+                        <a class="btn btn-outline font-normal border-[#179800]">Login</a>
+                        <a class="btn font-normal text-white bg-[#179800] px-8 ml-3">Register</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- banner section -->
+        <section>
+            
         </section>
     </header>
     <main>
