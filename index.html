@@ -33,6 +33,10 @@
                         'green-primary': '#179800',
                         'light-white': '#EFEBE3',
                         'light-black': '#111111',
+                        'green': '#115414',
+                        'light-green': '#63B76D',
+                        'blue': '#102861',
+                        'light-blue': '#2A4D97',
                     }
                 }
             }
@@ -44,10 +48,10 @@
     <header class="md:container mx-auto bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
         <!-- navbar section -->
         <nav class="border border-green-primary sm:border-none">
-            <div class="navbar justify-between">
+            <div class="navbar justify-around">
                 <div class="flex-row-reverse mx-auto md:mx-0">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="md:hidden  text-[#179800] ml-60 md:ml-0 ">
+                        <div tabindex="0" role="button" class="md:hidden  text-green-primary ml-60 md:ml-0 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -82,8 +86,8 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i class="fa-solid fa-cart-shopping"></i>
                     <div class="">
-                        <a class="btn btn-outline font-normal border-[#179800]">Login</a>
-                        <a class="btn font-normal text-white bg-[#179800] px-8 ml-3">Register</a>
+                        <a class="btn btn-outline font-normal border-green-primary">Login</a>
+                        <a class="btn font-normal text-white bg-green-primary px-8 ml-3">Register</a>
                     </div>
                 </div>
             </div>
@@ -150,8 +154,8 @@
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
                     <!-- Left-Side box 1 -->
                     <div class="bg-gradient-to-b from-[#53DB3A] p-6 rounded-lg flex flex-col">
-                        <h3 class="text-2xl font-bold text-light-white">30% off</h3>
-                        <p class="text-light-black mt-2">Discover a world of treats, toys, and <br> essentials
+                        <h3 class="text-2xl font-bold text-light-white mt-11">30% off</h3>
+                        <p class="text-light-black my-5 ">Discover a world of treats, toys, and <br> essentials
                             handpicked for you.</p>
                         <button class="btn mt-5 w-36 ">Buy Now</button>
                         <img src="assets/vegetable-offer.png" alt="">
@@ -264,8 +268,30 @@
         </section>
 
         <!-- Offers section -->
-        <section>
-
+        <section class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-semibold mb-12 mt-36 mx-5 text-green-primary">Arrival & Offers</h2>
+    
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mx-4">
+                <!-- Daawat Offer (Larger Card - 3 parts) -->
+                <div class="md:col-span-3 bg-green text-white p-6 rounded-3xl flex items-center justify-between">
+                    <div class="">
+                        <img src="assets/dawat-logo.png" alt="">
+                        <span class="bg-light-green px-10 py-4 mt-10 rounded-xl block font-mono">Cook Exotic Dishes</span>
+                        <p class="text-3xl mt-6 mb-">UP TO <span class="font-bold">20% OFF</span></p>
+                    </div>
+                    <img src="assets/dawat-mock-up.png" alt="">
+                </div>
+    
+                <!-- India Gate Offer (Smaller Card - 2 parts) -->
+                <div class="md:col-span-2 bg-blue text-white p-5 rounded-3xl flex items-center justify-between">
+                    <div class="">
+                        <img src="assets/india-gate-logo.png" alt="">
+                        <span class="bg-light-blue px-10 py-4 mt-10 rounded-xl block font-mono">World’s No.1 Rice</span>
+                        <p class="text-3xl mt-6">UP TO <span class="font-bold">40% OFF</span></p>
+                    </div>
+                    <img src="assets/india-gate-mock-up.png" alt="">
+                </div>
+            </div>>
         </section>
     </main>
     <footer>
